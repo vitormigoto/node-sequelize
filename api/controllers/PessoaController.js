@@ -62,7 +62,7 @@ class PessoaController {
                     id: Number(id)
                 }
             })
-            return res.status(200).json("Pessoa Removida")
+            return res.status(200).json({mensagem:`Pessoa ${id} Removida`})
         } catch (error) {
             return res.status(500).json(error.message)
         }
